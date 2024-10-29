@@ -22,8 +22,8 @@ document.getElementById('bhajanList').addEventListener('click', async function(e
 });
 
 async function fetchLyricsFromGitHub(fileName) {
-    const repoUrl = 'https://raw.githubusercontent.com/your-username/your-repo-name/main/lyrics/';
-    const response = await fetch(`${repoUrl}${fileName}.txt`);
+    const repoUrl = 'https://raw.githubusercontent.com/samarth-jain28/BhajanSangrah/refs/heads/main/bhajans/';
+    const response = await fetch(`${repoUrl}${"jhoola%20jhulaye%20rahi%20re.txt"}.txt`);
     if (!response.ok) throw new Error('Network response was not ok');
     return response.text();
 }
